@@ -54,12 +54,13 @@ public void decrementToEven() {
 
 	// TODO: dev3- count the frequency of word in sentence,
 	// refactor source code from dev1 and dev2
-	public int countFrequency(String word, String sentence) {
+	public void countFrequency(String word, String sentence) {
 		int count = 0;
 		
 		// Check for null or empty input
 		if (word == null || sentence == null || word.isEmpty() || sentence.isEmpty()) {
-			return count;
+			_ctr = -99;  // or set to some default value, based on your requirements
+			return;
 		}
 	
 		// Split the sentence into words
@@ -72,8 +73,7 @@ public void decrementToEven() {
 			}
 		}
 	
-		return count;
+		_ctr = count;
 	}
-	
 
 }
