@@ -29,14 +29,14 @@ public class Counter {
 	}
 
 	// TODO: dev1- method for increment to closest even number
-public void incrementToEven() {
-    if (_ctr % 2 != 0) {
+	public void incrementToEven() {
+    	if (_ctr % 2 != 0) {
         _ctr++; // Increment if the current value is odd to make it even
     }
 }
 
 // TODO: dev1- method for decrement to closest even number
-public void decrementToEven() {
+	public void decrementToEven() {
     if (_ctr % 2 != 0) {
         _ctr--; // Decrement if the current value is odd to make it even
     }
