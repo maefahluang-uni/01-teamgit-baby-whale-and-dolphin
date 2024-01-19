@@ -54,8 +54,26 @@ public void decrementToEven() {
 
 	// TODO: dev3- count the frequency of word in sentence,
 	// refactor source code from dev1 and dev2
-	public void countFrequency(String word, String sentence) {
-		_ctr = -99;
+	public int countFrequency(String word, String sentence) {
+		int count = 0;
+		
+		// Check for null or empty input
+		if (word == null || sentence == null || word.isEmpty() || sentence.isEmpty()) {
+			return count;
+		}
+	
+		// Split the sentence into words
+		String[] words = sentence.split("\\s+");
+	
+		// Count the frequency of the specified word
+		for (String w : words) {
+			if (w.equals(word)) {
+				count++;
+			}
+		}
+	
+		return count;
 	}
+	
 
 }
